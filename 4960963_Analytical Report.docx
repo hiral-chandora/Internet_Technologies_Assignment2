@@ -1,0 +1,142 @@
+
+Analytical Report
+
+Comparing two JavaScript Libraries 
+With plain JavaScript
+
+
+Student Name: Hiral Chandora
+
+Swin Student ID: 4960963
+
+Unit Code: COS60004
+
+Unit Name: Internet Technologies
+
+Tutorial: Friday 12.30 hrs
+
+Submission Date: 05/05/2014
+
+
+
+
+
+
+Table of Content
+
+	JQuery
+•	Background/History
+•	Goals/Claimed strength
+•	Features
+•	Advantages
+•	Disadvantages
+
+	MooTools
+•	Background/History
+•	Goals/Claimed strength
+•	Advantages
+•	Disadvantages
+
+	Comparison of codes
+
+	References
+
+
+
+
+
+
+
+
+
+
+
+1)	JQuery:-
+Background/History:-
+JQuery is a lightweight java script library and dose proper functionality across multi browser. JQuery is developed by John Resig, which simplifies the client side scripting of HTML and also it has changed the way millions of programmers write their JavaScript. The first version of JQuery was released on 26th of August, 2006 at BarCamp NYC. The working latest version of JQuery is JQuery 2.1, released on 24th January, 2014. With the help of plug-in, it supports Mobile/tablet (touch events).
+
+Goals/ Claimed strength:-
+The main motto of developing JQuery JavaScript library is, there should be fun to write java script code and which is achieved by taking common, repetitive tasks, stripping out the entire unnecessary markup, and leaving them short, smart and understandable. JQuery helps to write many lines of Java script code into one single and short line of code. It has strength of versatility and extensibility.
+
+Features:-
+JQuery provides many features: 
+•	HTML/DOM manipulation
+•	HTML event methods
+•	CSS manipulation
+•	AJAX
+•	Utilities 
+•	Effects and animations
+
+HTML/DOM manipulation:-
+The most important aspects of JQuery JavaScript library is manipulation of Document Object Model (DOM) and HTML elements. DOM is mainly responsible for representing logical structure of documents and interacting with HTML, XHTML or XML elements. JQuery has list of methods, which helps to navigate and manipulate DOM elements very easily. For an example,
+var firstname =  $("# firstname").val();
+Here ‘firstname’ is the id assigned to textbox in the html form. The value of the text box can retrieved by simply using the val() function.
+
+
+HTML event methods:-
+To attach event handlers to selections, JQuery gives simpler ways in terms of simple methods. When any event is fired/triggered/occurs, the call back function is executed. In the function definition, the term, ‘this’ refers to the targeted element, which was clicked. The callback function gets an event object, which is used to get the nature of the event and also helpful to prevent from its default behavior.
+
+With the help of JQuery, it becomes easy way to setting up event driven responses for given HTML page element. When user gives input or response to HTML page, like, typing text in textbox or when button is clicked, the event is triggered. In some cases, the browser itself triggers the events, like in case of loading and unloading of page.
+$('#regform').submit(function() {
+//write your code here
+});
+Here ‘regform' is the id assigned to form element in the html page. JQuery is use to bind event when user clicks on submit button of customer registration form. In JavaScript, first we have to find element, then add event listener to element and write block of code as functionality in it. So it reduces lines of coding.  At the same time the functionality can also be written in block, which will execute on user interactions.
+
+Effects and Animation:-
+There is various numbers of methods available in JQuery to assign effects and animations to the elements of html page.
+
+$('#showstatus').fadeOut(5000, function() {
+// Animation complete.						 
+ 			});
+	In above example, ‘showstatus’ is an id assigned to div element and we are using JQuery method, ‘fade Out’ to give fading out effect to div event. Likewise, there are many other features available in JQuery, which cannot be doable readily available in plain JavaScript and allows to programmer to do more functionality.
+
+	Advantages:-
+
+	The main benefit of using JQuery is it supports cross browser compatibility, which is problem in AJAX/JavaScript programming language, a website may not look, work as expected over all browsers.
+	JQuery is lightweight library, as its core library is only 24 kb in size. So it helps to improve in performing well web application and can easily add in the application. Lots of functionality is moved to JQuery plug-ins, so if anyone wants to implement such functionality, only those programmers can add plug-in into their application.
+	JQuery is very easy to learn and it doesn’t require any prerequisites coding knowledge, also it is very compact and easily understandable.
+	JQuery is very useful when programmer wants functionality like fade in, fade out, show, hide etc to give a cool look to applications. It is also easy to deal with DOM manipulation, JQuery is helpful to add or remove elements. 
+
+Disadvantages:-
+	To use the functionality of JQuery, we need to add path of JQeury file, so one has to depend on internet. 
+	Though JQuery has large amount of useful libraries, sometimes it happens that for requirements of some custom functionality, programmer has to move to use raw JavaScript.
+
+
+2)	MooTools:-
+Background/History of JQuery:-
+MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer. It allows you to write powerful, flexible, and cross-browser code with its elegant, well documented, and coherent API. MooTools code respects strict standards and doesn't throw any warnings. It's extensively documented and has meaningful variable names: a joy to browse and a snap to understand. [1]
+
+Goals/ Claimed strength:-
+MooTools uses the concepts of object orient and useful to write powerful and flexible code. The main motto behind implementing MooTools framework API is to feel like JavaScript and enhances everything, and not only DOM.
+
+Advantages-
+Use of MooTools gives vast number of benefits over using native JavaScript:
+•	Extensible and modular frameworks allow developers to choose their own customized combination of components.
+•	MooTools follows object-oriented practices.
+•	An advanced effects component, with optimized transitions such as easing equations used by many Flash developers.
+•	Enhancements to the DOM, enabling developers to easily add, modify, select, and delete DOM elements. Storing and retrieving information with Element storage is also supported.
+
+Disadvantages:-
+	MooTools takes long time to learn and require lots of lines of code.
+
+
+
+
+
+Comparison of Codes:-
+JavaScript/DOM Manipulation	JQuery	Description
+var showstatus = document.getElementById("showstatus");	var showstatus = $('#showstatus');	To get element of html page
+var bpostcode = document.getElementById("bpostcode").value;	var bpostcode = $('#bpostcode').val();	To get the value of element of html page
+var bstate = document.getElementById("bstate").options[document.getElementById("bstate").selectedIndex].value;	$('#dstate').val($('#bstate').val());	To get value of selected option of drop down listbox.
+sameadd.addEventListener ("CheckboxStateChange", OnChangeCheckbox, false);	$('#sameadd').on('click',function()	To trigger event when checkbox is checked or unchecked.
+
+
+
+
+
+References:-
+•	[1] http://mootools.net/
+•	http://en.wikipedia.org/wiki/JQuery
+•	http://en.wikipedia.org/wiki/MooTools
+•	JQuery Event Handler, 2014, JQuery Events [ONLINE] <http://learn.jquery.com/events/> [Accessed on 03 May, 2014]
+•	JQuery features, Advantanges and disadvantages, 2014, JQuery features, Advantages and  disadvantages [ONLINE], <http://www.mallstuffs.com/blogs/BlogDetails.aspx?BlogId=14&BlogType=Technical> [Accessed on 03 May, 2014]
