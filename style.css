@@ -1,0 +1,279 @@
+/*
+File Name:style.css
+Name:Hiral Chandora
+SID:4960963  */
+
+/** Html Basic Tag Styling **/
+body
+{
+ font-family: Arial, "San-serif";
+ margin: 0px 100px;
+ padding: 0;
+ min-width: 960px;
+ font-size: 14px;
+}
+
+header {
+ height: 110px;
+ background: #eee;
+}
+
+a{
+padding-left:10px;
+padding-right:10px;
+}
+
+#header-wrapper{
+	height: 75px;
+}
+
+#logo{
+	width: 100px;
+	height: 75px;
+	float: left;
+	background: url("../styles/images/logo.jpg") center center no-repeat;
+}
+
+#company-name{
+	width: 85%;
+    height: 75px;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #999;
+}
+
+section{
+	padding: 20px;
+	background: #ddd;
+}
+
+footer{
+ height: 30px;
+}
+
+footer p {
+ text-align: center;
+ font-size: 12px;
+ line-height: 5px;
+}
+
+/** Navigation*/
+
+nav{
+}
+
+nav ul{
+margin: 0 auto;
+width: 660px;
+}
+
+nav ul li {
+display: inline-block;
+list-style: none;
+width: 100px;
+height: 20px;
+padding-top: 5px;
+text-align: center;
+background: #333;
+border: 1px solid #000;
+border-radius: 3px;
+}
+
+nav ul li a{
+display: block;
+color: #fff;
+text-decoration: none;
+text-shadow: 2px 2px 2px #999;
+}
+
+nav ul li.selected-list,
+nav ul li:hover{
+background: #666;
+}
+
+table
+{
+margin-left:auto;
+margin-right:auto;
+}
+
+table, td, th{
+	border:1px solid #555;
+	border-spacing: 0px;
+	padding: 3px;
+	text-align:center;
+	background-color:rgb(204,204,204);
+}
+
+th{
+	background-color:rgb(136,136,136);
+	color:rgb(0,0,0);
+}
+
+table tfoot td
+{
+	text-align:left;
+	padding-left:10px;
+	border:none;
+}
+
+aside
+{
+	width: 425px;
+	padding: 5px;
+	float:left;
+}
+
+article{
+background: #eee;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+clear: both;
+margin-bottom:10px;
+}
+
+article .clear{
+clear: both;
+}
+
+article .image-wrapper{
+width: 425px;
+padding: 5px;
+}
+
+article .image-wrapper img{
+width: 410px;
+}
+
+article .image-wrapper.small{
+width: 125px;
+padding: 5px;
+}
+
+article .image-wrapper.small img{
+width: 110px;
+}
+
+article .image-wrapper a img:hover{
+border: 1px solid #333;
+}
+
+article .details-wrapper {
+width: 50%;
+}
+
+article .left{
+float: left;
+}
+
+article .right{
+float: right;
+}
+
+article .content-wrapper{
+width: 60%;
+float:left;
+}
+
+article .top-wrapper{
+background: #666;
+border: 1px solid #333; 
+border-radius: 5px;
+padding:5px;
+}
+
+article .top-wrapper .image-wrapper{
+border: none;
+}
+
+article h2,
+article h3 {
+text-shadow: 2px 2px 2px #999;
+}
+
+/** Content **/
+#StudentName{  
+    text-align:right; 
+	font-size:150%;
+}
+
+#StudentID {
+    text-align:right; 
+	font-family: Arial, "San Serif";
+}
+
+#Course {
+	text-align:right;            
+	color:#ccc;
+}
+
+#ProfilePic{
+	float:left;
+	width:200px;
+	height:200px;
+	padding:10px;	
+	border:10px;
+	border-style:groove;
+}
+.productselection{
+	width:20px;
+	float:left;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	body{
+		width: 320px; 
+		padding:0;
+		margin: 0;
+		min-width: 320px;
+	}
+	
+	header {
+	height: 120px;
+	}
+	
+	nav ul {
+	margin: 0 auto;
+	width: 300px;
+	padding: 10px;
+	}
+	
+	nav ul li {
+	width: 94px;
+	}
+	
+	#company-name{
+	width: 220px;
+	}
+	
+	article .image-wrapper{
+	width: 260px;
+	padding: 5px;
+	}
+
+	article .image-wrapper img{
+	width: 250px;
+	}
+	
+	article img{
+	width: 250px;
+	}
+	
+	article .left{
+	float: none;
+	}
+	
+	article .right{
+	float: none;
+	}
+	
+	article .content-wrapper {
+	width: 250px;
+	float: none;
+	}
+
+}
