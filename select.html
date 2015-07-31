@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Assignment1 - Internet Technologies" />
+		<meta name="keywords"    content="HTML, CSS" />
+		<meta name="author"      content="Hiral Chandora" />
+		<!-- title of page -->
+		<title>Product Selection Page</title>
+		<!-- Reference to External CSS -->
+		<link href="styles/style.css" rel="stylesheet" type="text/css" />
+		<!-- <script src="jquery.js"></script>
+		<script src="alternative.js"></script> -->
+		<script src="product.js"></script> 
+	</head>
+	<body>
+	<header>
+		<div id="header-wrapper">
+			<a href="index.html"> <div id="logo"></div></a>
+			<div id="company-name">
+				<h1>Galippo Airlines</h1>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html"> Home </a>
+				</li>
+				<li>
+					<a href="product.html"> Product </a>
+				</li>
+				<li>
+					<a href="about.html"> About </a>
+				</li>
+				<li class="selected-list">
+					<a href="select.html"> Select </a>
+				</li>
+				<li>
+					<a href="customer.html"> Register </a>
+				</li>
+				<li>
+					<a href="purchase.html"> Payment </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+    <section>
+	
+		<form id="selectform" method="post" action="http://mercury.ict.swin.edu.au/it000000/formtest.php">
+	
+		<article>
+		<div class="productselection">
+			<input type="radio" name="selectpro" id="unitedstate" value="Chicago, United States" checked="checked"/>
+		</div>
+		<div class="image-wrapper small left">
+		<a href="product1.html"><img src ="images/product_chicago.jpg" alt="Chicago" /></a>
+		</div>
+		<div class="content-wrapper">
+		<h3>Chicago, United States</h3>
+		
+		<p>we will fly daily to America’s third largest city. Central to the growth of the United States of America, Chicago is a bustling city, plentiful for shopping and top restaurants. Chicago boasts green open spaces and a wealth of attractions to keep visitors busy. Come explore America’s “Windy City”.</p>
+		</div>
+		<div class="clear"></div>
+		</article>
+		
+		<article>
+		<div class="productselection">
+			<input type="radio" name="selectpro" id="egypt" value="Cairo, Egypt"/>
+		</div>
+		<div class="image-wrapper small left">
+		<a href="product2.html"><img src ="images/product_cairo.jpg" alt="Cairo" /></a>
+		</div>
+		<div class="content-wrapper">
+		<h3>Cairo, Egypt</h3>
+		<p>Fly to Cairo with us and discover the Egyptian capital on the River Nile, where the Great Pyramids meet with a modern city.</p>
+		</div>
+		<div class="clear"></div>
+		</article>
+		
+		<article>
+		<div class="productselection">
+			<input type="radio" name="selectpro" id="dubai" value="Dubai"/>
+		</div>
+		<div class="image-wrapper small left">		
+		<a href="product3.html"><img src ="images/product_dubai.jpg" alt="Dubai" /></a>
+		</div>
+		<div class="content-wrapper">
+		<h3>Dubai</h3>
+		<p>Fly to Dubai and discover one of the world’s fastest-growing cities, and a place where ultra-modern development sits alongside traditional Arabian culture.</p>
+		</div>
+		<div class="clear"></div>
+		</article>
+		
+		<article>
+		<div class="productselection">
+			<input type="radio" name="selectpro" id="india" value="Ahmedabad, India"/>
+		</div>
+		<div class="image-wrapper small left">		
+		<img src ="images/product_india.jpg" alt="Ahmedabad" />
+		</div>
+		<div class="content-wrapper">
+		<h3>Ahmedabad, India</h3>
+		<p>Fly to Ahmedabad and discover the textiles, temples and thalis of India’s fast growing and prosperous city.</p>
+		</div>
+		<div class="clear"></div>
+		</article>
+		<p>
+			<input type="submit" value="Add My Trip" />
+			<input type="reset" value="Reset" />
+		</p>
+		</form>
+	</section>
+	<footer>
+	<p>Terms and Conditions Reserved 2014</p>
+    <p>All content displayed on the page has been copied from <a href="http://www.emirates.com/" target="_blank">Emirates Airline Website</a></p>
+	</footer>
+	</body>
+</html>
